@@ -1,6 +1,6 @@
 @import url(variables.css);
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,62 +8,70 @@
 
 body {
     background: linear-gradient(to right, #FEAF00 0%, #F8D442 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.primero{
+.primero {
     border-radius: 20px;
     background-color: var(--color-1);
     width: auto;
-    height: auto;
-    justify-self: center;
-    align-items: center;
     margin-top: auto;
 }
-.primerito{
-    padding: 60px;
+
+.primerito {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 60px;
+    padding-bottom: 40px;
     font-family: "bold";
     display: flex;
     flex-direction: row;
     font-size: 20px;
 }
-.primerito img{
+
+.primerito img {
     padding-right: 10px;
 }
-.segundito{
+
+.segundito {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 50px;
 }
-.segundito h1{
+
+.segundito h1 {
     font-family: "semibold";
     padding-bottom: 10px;
 }
-.segundito p{
+
+.segundito p {
     font-family: "regular";
     font-size: 14px;
     font-weight: 100;
     color: var(--color-4);
 }
-.lobol{
+
+.lobol {
     padding-left: 20px;
     padding-right: 20px;
 }
-.lobol h3{
-    font-family: "medium";
-    font-weight: 100;
-    color: var(--color-4);
-    font-size: 14px;
-}
+
+/* Estilo de los labels */
 label {
     font-size: 18px;
     color: #333;
     margin-bottom: 8px; 
     display: block;
+    transition: color 0.3s ease;
 }
 
-input{
+/* Estilos para los inputs */
+input {
     font-size: 12px;
     font-family: "regular";
     color: var(--color-5);
@@ -73,9 +81,22 @@ input{
     border: 0.5px solid var(--color-6);
     border-radius: 4px;
     font-weight: 100;
+    transition: color 0.3s ease;
 }
 
-.boton button{
+
+input:focus {
+    font-family: "medium";
+    border-color: #FEAF00;
+    outline: none;
+    color: #000;
+}
+
+input:not(:placeholder-shown) {
+    color: #000;
+}
+
+.boton button {
     background: linear-gradient(to right, #FEAF00 0%, #F8D442 100%);
     width: 90%;
     height: auto;
@@ -87,24 +108,27 @@ input{
     border-radius: 5px;
     border: none;
 }
-.boton h1{
+
+.boton h1 {
     font-family: "medium";
     font-weight: 100;
     font-size: 15px;
     color: var(--color-1);
 }
-.final{
+
+.final {
     font-family: "medium";
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 100;
-    margin-top: 15px;
-    padding-bottom: 15px;
+    gap: 5px;
+    margin-top: 25px;
+    padding-bottom: 25px;
     display: flex;
     align-items: center;
     justify-self: center;
-    color: var(--color-4)
+    color: var(--color-4);
 }
 
-a{
+a {
     color: #FEAF00;
 }
