@@ -60,8 +60,13 @@ body {
     padding-left: 20px;
     padding-right: 20px;
 }
+.lobol h3{
+    font-family: "medium";
+    font-weight: 100;
+    color: var(--color-4);
+    font-size: 14px;
+}
 
-/* Estilo de los labels */
 label {
     font-size: 18px;
     color: #333;
@@ -70,7 +75,6 @@ label {
     transition: color 0.3s ease;
 }
 
-/* Estilos para los inputs */
 input {
     font-size: 12px;
     font-family: "regular";
@@ -129,6 +133,9 @@ input:not(:placeholder-shown) {
     color: var(--color-4);
 }
 
+.final{
+    font-weight: 100;
+}
 a {
     color: #FEAF00;
 }
