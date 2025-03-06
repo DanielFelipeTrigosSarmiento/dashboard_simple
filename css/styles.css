@@ -1,141 +1,54 @@
 @import url(variables.css);
-
-* {
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    background: linear-gradient(to right, #FEAF00 0%, #F8D442 100%);
+#dialog__login {
+    border: none !important;
+    border-radius: 15px;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    padding: 1.6rem;
+    width: 500px;
+    margin: auto;
+}
+.dialog__header{
     display: flex;
+    justify-content: flex-end;
+}
+.dialog__header span{
+    cursor: pointer;
+}
+#form__login{
+    background: orange;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
-
-.primero {
-    border-radius: 20px;
-    background-color: var(--color-1);
-    width: auto;
-    margin-top: auto;
-}
-
-.primerito {
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 60px;
-    padding-bottom: 40px;
-    font-family: "bold";
-    display: flex;
-    flex-direction: row;
-    font-size: 20px;
-}
-
-.primerito img {
-    padding-right: 10px;
-}
-
-.segundito {
+.div__title{
+    background: violet;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding-bottom: 50px;
+    gap: 19px;
 }
-
-.segundito h1 {
-    font-family: "semibold";
-    padding-bottom: 10px;
-}
-
-.segundito p {
-    font-family: "regular";
-    font-size: 14px;
-    font-weight: 100;
-    color: var(--color-4);
-}
-
-.lobol {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.lobol h3{
-    font-family: "medium";
-    font-weight: 100;
-    color: var(--color-4);
-    font-size: 14px;
-}
-
-label {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 8px; 
-    display: block;
-    transition: color 0.3s ease;
-}
-
-input {
-    font-size: 12px;
-    font-family: "regular";
-    color: var(--color-5);
-    padding: 15px;
-    margin-bottom: 20px;
-    width: 100%;
-    border: 0.5px solid var(--color-6);
-    border-radius: 4px;
-    font-weight: 100;
-    transition: color 0.3s ease;
-}
-
-
-input:focus {
-    font-family: "medium";
-    border-color: #FEAF00;
-    outline: none;
-    color: #000;
-}
-
-input:not(:placeholder-shown) {
-    color: #000;
-}
-
-.boton button {
-    background: linear-gradient(to right, #FEAF00 0%, #F8D442 100%);
-    width: 90%;
-    height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.div__input{
+    background: blue;
+    padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    justify-self: center;
-    border-radius: 5px;
-    border: none;
-}
-
-.boton h1 {
-    font-family: "medium";
-    font-weight: 100;
-    font-size: 15px;
-    color: var(--color-1);
-}
-
-.final {
-    font-family: "medium";
-    font-size: 8px;
-    font-weight: 100;
-    gap: 5px;
-    margin-top: 25px;
-    padding-bottom: 25px;
-    display: flex;
     align-items: center;
-    justify-self: center;
-    color: var(--color-4);
 }
-
-.final{
-    font-weight: 100;
+.div__input div{
+    background: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-a {
-    color: #FEAF00;
+.div__button{
+    background: beige;
+    display: flex;
+    flex-direction: column;
 }
